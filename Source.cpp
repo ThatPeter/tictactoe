@@ -12,15 +12,15 @@ using namespace std;
 
 int main()
 {
-	infoPanel();
+    infoPanel();
 
     int position;
-	string playerName =     setName();
+    string playerName =     setName();
     unsigned int bestOfX =  setFormat();
 
-	Playfield playfield;
-	Gameplay gameplay(bestOfX, playerName);
-	gameplay.setWhoStarts();
+    Playfield playfield;
+    Gameplay gameplay(bestOfX, playerName);
+    gameplay.setWhoStarts();
 
 	for (int i = 1; i <= bestOfX; i++) {
 
