@@ -94,7 +94,7 @@
             if ((enterCounter++ + 1) % 3 == 0)
                 cout << endl << endl;
         }
-
+ 
         cout << "-------------------" << endl;
         cout << endl << endl;
     }
