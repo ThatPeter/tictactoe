@@ -20,10 +20,7 @@ int main()
 
 	Playfield playfield;
 	Gameplay gameplay(bestOfX, playerName);
-
 	gameplay.setWhoStarts();
-
-	
 
 	for (int i = 1; i <= bestOfX; i++) {
 
@@ -59,6 +56,5 @@ int main()
     
 	gameplay.seriesWinner();
     
-	system("pause");
 	return EXIT_SUCCESS;
 }
