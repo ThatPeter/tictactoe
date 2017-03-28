@@ -45,6 +45,7 @@ int main()
 			gameplay.moveMade();
 		}
 
+        
 		if(gameplay.noMoreMoves())
 			cout << "This battle ended in a draw" << endl << endl;
 
