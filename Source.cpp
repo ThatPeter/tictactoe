@@ -12,24 +12,6 @@ using namespace std;
 
 int main()
 {
-    /*
-    map<int, char> field;
-    field =
-    {
-        { 11, 0 },
-        { 12, 0 },
-        { 13, 0 },
-        { 21, 0 },
-        { 22, 0 },
-        { 23, 0 },
-        { 31, 0 },
-        { 32, 0 },
-        { 33, 0 }
-    };
-
-    bestMoveTEST(field,CROSS,10);
-    */
-
 	infoPanel();
 
     int position;
