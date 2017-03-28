@@ -22,40 +22,40 @@ int main()
     Gameplay gameplay(bestOfX, playerName);
     gameplay.setWhoStarts();
 
-	for (int i = 1; i <= bestOfX; i++) {
+    for (int i = 1; i <= bestOfX; i++) {
 
-		cout << "---GAME NUMBER " << i << "---" << endl << endl;
+        cout << "---GAME NUMBER " << i << "---" << endl << endl;
 
-		playfield.printField();
+        playfield.printField();
 
-		while (!gameplay.noMoreMoves())
-		{	
+        while (!gameplay.noMoreMoves())
+        {	
             position = setPosition("Type in the position you want to place your symbol: ");
 	
-			Sides current = gameplay.getMove();
+            Sides current = gameplay.getMove();
 	
-			playfield.setFieldValue(position, current);
-			playfield.printField();
+            playfield.setFieldValue(position, current);
+            playfield.printField();
 
-			if (gameplay.winnerFound(playfield.getPlayField(), current))
-			{   
-				gameplay.gameWinner(current, i);
-				break;
-			}
-			gameplay.moveMade();
-		}
+            if (gameplay.winnerFound(playfield.getPlayField(), current))
+            {   
+                gameplay.gameWinner(current, i);
+                break;
+            }
+            gameplay.moveMade();
+        }
 
         
-		if(gameplay.noMoreMoves())
-			cout << "This battle ended in a draw" << endl << endl;
+        if(gameplay.noMoreMoves())
+            cout << "This battle ended in a draw" << endl << endl;
 
-		gameplay.clearMoves();
-		gameplay.resetMoves();
-		gameplay.switchSides();
-		playfield.resetPlayfield();
-	}
+        gameplay.clearMoves();
+        gameplay.resetMoves();
+        gameplay.switchSides();
+        playfield.resetPlayfield();
+    }
     
-	gameplay.seriesWinner();
+    gameplay.seriesWinner();
     
-	return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
