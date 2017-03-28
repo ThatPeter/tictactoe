@@ -20,11 +20,11 @@
     {
         switch (side)
         {
-        case CROSS:	        return 'X';
+        case CROSS:	    return 'X';
 
-        case CIRCLE:        return 'O';
+        case CIRCLE:    return 'O';
 
-        default:		    return 0;
+        default:	    return 0;
 
         }
     }
